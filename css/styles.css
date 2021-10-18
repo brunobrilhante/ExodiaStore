@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: #9C4623 !important;
+}
+
+#logo {
+  width: 170px;
+  height: 170px;
+}
+
+.menu {
+  float: right;
+  margin-left: 20%;
+  font-size: 18px;  
+}
+
+.espaco {
+  margin-top: 90px !important;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #d84f19;
+}
+
+.nav-item a:hover {
+  color: #E9DB34;
+}
+
+.header-area {
+  background-color: #1a1b29;
+  background: repeating-linear-gradient(135deg, #100f0d,#100f0d 3px, #1a1b29 3px, #1a1b29 6px);
+  height: 190px;  
+}
+
+.footer-area {
+  background-color: #1a1b29;
+  background: repeating-linear-gradient(135deg, #100f0d,#100f0d 3px, #1a1b29 3px, #1a1b29 6px);
+  height: 200px;  
+}
+
+.footer-area a {
+  text-decoration: none !important;
+  color: #d84f19;  
+}
+
+.footer-area a:hover {
+  color: #E9DB34;  
+}
+
+.menu-footer a {
+  margin-left: 100px;
+}
+
+.card {
+  border: #E9DB34 solid 1px !important;
+}
+
+.display-4 {
+  color: #9C4623;
+}
+
+.tituloCard {
+  color: #9C4623;  
+  text-decoration: none !important;
+}
+
+.tituloCard h5:hover {
+  color: #132958 !important;  
+}
+
+.btn-info {
+  background-color: #132958 !important;
+}
+
+.btn-info a:hover{
+  background-color: #E9DB34 !important;
+}
