@@ -1,5 +1,5 @@
 function comprar() {
-    alert("Entre em contato!!!");
+    alert("Compra finalizada com sucesso!");
 }
 
 function AddCarrinho(produto, qtd, valor, posicao)
