@@ -4,23 +4,14 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dragão Branco de Olhos Azuis</title>
+		<title>Carrinho</title>
 		<link rel="shortcut icon" href="/assets/img/exodiastore.ico" />
 		<link rel="stylesheet" href="/css/styles.css" />    
 		<script src="/js/script.js"></script>
 
 		<!-- Bootstrap -->
-		<link
-		rel="stylesheet"
-		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-		crossorigin="anonymous"
-		/>
-		<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-		crossorigin="anonymous"
-		></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="header-area">
@@ -28,7 +19,7 @@
 			<div class="container">
 				<div class="row">
 				<div class="col-lg-12">
-					<nav class="navbar navbar-expand-lg">
+					<nav class="navbar navbar-expand-lg" style="margin-left: 100px;">
 					<a class="navbar-brand" href="index.html">
 						<img id="logo" src="/assets/img/exodiastore.png" alt="Logo" />
 					</a>
@@ -93,8 +84,165 @@
 						document.getElementById("total").innerHTML = total.toFixed(2); 
 						</script>
 
-						<button style="margin-top: 30px;" class="btn btn-info" type="button" onclick=" localStorage.clear(); location.reload(); comprar();"> Finalizar compra </button>
-						<button style="margin-top: 30px;" class="btn btn-info" type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+						<button data-bs-toggle="modal" data-bs-target="#modal1" style="margin-top: 30px; color: white;" class="btn btn-info" type="button" > Pagamento </button>
+						<button style="margin-top: 30px; color: white;" class="btn btn-info" type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+						
+						<!-- Modal 1-->
+						<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+							<div class="modal-dialog">
+	  							<div class="modal-content">
+									<div class="modal-header">
+		  								<h5 class="modal-title" id="modal1Label">Dados</h5>
+		  								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<form>											
+											<div class="form-group">
+												<label>Nome Completo</label>
+												<input type="text" class="form-control" placeholder="Mário José França">
+											</div>
+											<div class="form-group">
+												<label>Rua</label>
+												<input type="text" class="form-control" placeholder="Rua XYZ, 96">
+											</div>										
+											<div class="form-group">
+											  <label>Bairro</label>
+											  <input type="text" class="form-control" placeholder="Alphavela">
+											</div>
+											<div class="form-group">
+											  <label">Cidade</label>
+											  <input type="text" class="form-control" placeholder="São Paulo">
+											</div>
+											<div class="form-group col-sm-2">
+												<label>Estado</label>
+												<input type="text" class="form-control" placeholder="SP">
+											  </div>											
+											<div class="form-group col-sm-4">
+												<label>CEP</label>
+												<input type="text" class="form-control" placeholder="55555555">
+											</div>											  																																	
+										  </form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+										<button data-bs-toggle="modal" data-bs-target="#modal2" type="button" class="btn btn-primary">Continuar</button>
+									</div>
+	  							</div>
+							</div>
+						</div>
+						
+						<!-- Modal 2-->
+						<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+											<h5 class="modal-title" id="modal2Label">Forma do Pagamento</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">										
+										<form>											
+											<div align="Center" class="form-group">
+												<button data-bs-toggle="modal" data-bs-target="#modalCredito" type="button" class="btn btn-primary">Crédito</button>
+												<button data-bs-toggle="modal" data-bs-target="#modalDebito" type="button" class="btn btn-primary">Débito</button>
+											</div>											
+											</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>										
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal Crédito -->
+						<div class="modal fade" id="modalCredito" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="modal1Label">Dados - Crédito</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<form>											
+											<div class="form-group">
+												<label>Nome do Titular</label>
+												<input type="text" class="form-control" placeholder="Mário José França">
+											</div>
+											<div class="form-group">
+												<label>Número do Cartão</label>
+												<input type="text" class="form-control" placeholder="1234 4567 7891 2345">
+											</div>										
+											<div class="form-group">
+												<label>CVV</label>
+												<input type="text" class="form-control" placeholder="084">
+											</div>
+											<div class="form-group">
+												<label">Vencimento</label>
+												<input type="text" class="form-control" placeholder="08/30">
+											</div>
+											<div class="form-group col-md-4">
+												<label for="inputEstado">Parcelas</label>
+												<select id="inputEstado" class="form-control">
+												<option selected>Escolher...</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>7</option>
+												<option>8</option>
+												<option>9</option>
+												<option>10</option>
+												<option>11</option>
+												<option>12</option>
+												</select>
+											</div>																																	  																																	
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+										<button onclick=" localStorage.clear(); location.reload(); comprar();" data-bs-toggle="modal" data-bs-target="#modal2" type="button" class="btn btn-primary">FInalizar compra</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Modal Débito -->
+						<div class="modal fade" id="modalDebito" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="modal1Label">Dados - Débito</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<form>											
+											<div class="form-group">
+												<label>Nome do Titular</label>
+												<input type="text" class="form-control" placeholder="Mário José França">
+											</div>
+											<div class="form-group">
+												<label>Número do Cartão</label>
+												<input type="text" class="form-control" placeholder="1234 4567 7891 2345">
+											</div>										
+											<div class="form-group">
+												<label>CVV</label>
+												<input type="text" class="form-control" placeholder="098">
+											</div>
+											<div class="form-group">
+												<label">Vencimento</label>
+												<input type="text" class="form-control" placeholder="09/29">
+											</div>																																												  																																	
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+										<button onclick=" localStorage.clear(); location.reload(); comprar();" data-bs-toggle="modal" data-bs-target="#modal2" type="button" class="btn btn-primary">Finalizar compra</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -105,17 +253,17 @@
 				<hr>
 				<h2><strong>Entre em contato agora mesmo!</strong></h2>
 				<p>Nos envie uma mensagem, seja dúvida ou encomenda de produto.</p>
-				<a class="btn btn-info" href="mailto:brunobrilhante53@gmail.com?subject=Titulo&body=Mensagem" target="_blank" title="Envie sua mensagem!">Mandar e-mail</a>
+				<a style="color: white;" class="btn btn-info" href="mailto:brunobrilhante53@gmail.com?subject=Titulo&body=Mensagem" target="_blank" title="Envie sua mensagem!">Mandar e-mail</a>
 			</div>
 		</section>
 
 		<footer class="footer-area espaco">
 		<div class="container">
 			<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12" style="margin-left: 80px;">
 				<a href="#home">
 				<img
-					style="height: 200px; width: 200px;"
+					style="height: 170px; width: 170px;"
 					src="/assets/img/exodiastore.png"
 					alt="Logo"
 				/>
