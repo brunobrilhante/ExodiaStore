@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -10,75 +10,81 @@ h2 {
 }
 
 #logo {
-  width: 170px;
-  height: 170px;
+    width: 170px;
+    height: 170px;
 }
 
 .menu {
-  float: right;
-  margin-left: 20%;
-  font-size: 18px;  
+    float: right;
+    margin-left: 20%;
+    font-size: 18px;
 }
 
 .espaco {
-  margin-top: 90px !important;
+    margin-top: 90px !important;
 }
 
 .nav-item a {
-  text-decoration: none;
-  color: #d84f19;
+    text-decoration: none;
+    color: #d84f19;
 }
 
 .nav-item a:hover {
-  color: #E9DB34;
+    color: #E9DB34;
+    transition: ease-in-out 0.5s;
 }
 
 .header-area {
-  background-color: #1a1b29;
-  background: repeating-linear-gradient(135deg, #100f0d,#100f0d 3px, #1a1b29 3px, #1a1b29 6px);
-  height: 190px;  
+    background-color: #1a1b29;
+    background: repeating-linear-gradient(135deg, #100f0d, #100f0d 3px, #1a1b29 3px, #1a1b29 6px);
+    height: 190px;
 }
 
 .footer-area {
-  background-color: #1a1b29;
-  background: repeating-linear-gradient(135deg, #100f0d,#100f0d 3px, #1a1b29 3px, #1a1b29 6px);
-  height: 200px;  
+    background-color: #1a1b29;
+    background: repeating-linear-gradient(135deg, #100f0d, #100f0d 3px, #1a1b29 3px, #1a1b29 6px);
+    height: 200px;
 }
 
 .footer-area a {
-  text-decoration: none !important;
-  color: #d84f19;  
+    text-decoration: none !important;
+    color: #d84f19;
 }
 
 .footer-area a:hover {
-  color: #E9DB34;  
+    color: #E9DB34;
+    transition: ease-in-out 0.5s;
 }
 
 .menu-footer a {
-  margin-left: 100px;
+    margin-left: 100px;
 }
 
 .card {
-  border: #E9DB34 solid 1px !important;
+    border: #E9DB34 solid 1px !important;
+    transition: ease-in-out 0.5s;
 }
 
 .display-4 {
-  color: #9C4623;
+    color: #9C4623;
 }
 
 .tituloCard {
-  color: #9C4623;  
-  text-decoration: none !important;
+    color: #9C4623;
+    text-decoration: none !important;
 }
 
 .tituloCard h5:hover {
-  color: #132958 !important;  
+    color: #132958 !important;
 }
 
 .btn-info {
-  background-color: #132958 !important;
+    background-color: #0a235a !important;
+    color: white !important;
 }
 
-.btn-info a:hover{
-  background-color: #E9DB34 !important;
+.btn-info:hover {
+    background-color: #E9DB34 !important;
+    color: rgb(0, 0, 0) !important;
+    transition: ease-in-out 0.5s;
 }
