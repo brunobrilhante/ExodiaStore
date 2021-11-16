@@ -2,8 +2,7 @@ function comprar() {
     alert("Compra finalizada com sucesso!");
 }
 
-function AddCarrinho(produto, qtd, valor, posicao)
-{
+function AddCarrinho(produto, qtd, valor, posicao) {
     localStorage.setItem("produto" + posicao, produto);
     localStorage.setItem("qtd" + posicao, qtd);
     valor = valor * qtd;

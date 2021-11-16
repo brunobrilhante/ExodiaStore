@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +27,16 @@ h2 {
 
 .espaco {
     margin-top: 90px !important;
+    margin-left: 100px, rgba(255, 255, 0, 0.048);
+}
+
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.navbar {
+    font-size: small;
 }
 
 .nav-item a {
@@ -35,14 +50,19 @@ h2 {
 }
 
 .header-area {
-    background-color: #1a1b29;
-    background: repeating-linear-gradient(135deg, #100f0d, #100f0d 3px, #1a1b29 3px, #1a1b29 6px);
+    background-color: black;
+    background: black;
     height: 190px;
 }
 
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
 .footer-area {
-    background-color: #1a1b29;
-    background: repeating-linear-gradient(135deg, #100f0d, #100f0d 3px, #1a1b29 3px, #1a1b29 6px);
+    background-color: black;
+    background: black;
     height: 200px;
 }
 
@@ -60,13 +80,23 @@ h2 {
     margin-left: 100px;
 }
 
+.display-4 {
+    color: #9C4623;
+}
+
+
+/*--------------------------------------------------------------
+# Cards
+--------------------------------------------------------------*/
+
+.card-container {
+    margin-left: 100px;
+}
+
 .card {
     border: #E9DB34 solid 1px !important;
     transition: ease-in-out 0.5s;
-}
-
-.display-4 {
-    color: #9C4623;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .tituloCard {
@@ -76,7 +106,17 @@ h2 {
 
 .tituloCard h5:hover {
     color: #132958 !important;
+    transition: ease-in-out 0.5s;
 }
+
+#cartasEfeito {
+    background-color: rgba(255, 255, 0, 0.048);
+}
+
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
 
 .btn-info {
     background-color: #0a235a !important;
@@ -87,4 +127,193 @@ h2 {
     background-color: #E9DB34 !important;
     color: rgb(0, 0, 0) !important;
     transition: ease-in-out 0.5s;
+}
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+
+.team {
+    margin-top: 90px;
+}
+
+.team .member {
+    border: #E9DB34 solid 1px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #E9DB34;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.team .member .member-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+.team .member .member-info-content {
+    position: absolute;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.team .member .member-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.team .member .social {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    transition: left ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.team .member .social a:hover {
+    color: #E9DB34;
+}
+
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.team .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.team .member:hover .member-info-content {
+    bottom: 30px;
+    transition: bottom 0.4s;
+}
+
+.team .member:hover .social {
+    left: 0;
+    transition: left ease-in-out 0.3s;
+}
+
+.team h2 {
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+  # F.A.Q
+  --------------------------------------------------------------*/
+
+.faq {
+    background-color: rgba(255, 255, 0, 0.048);
+}
+
+.faq .faq-list {
+    padding: 0 100px;
+}
+
+.faq .faq-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.faq .faq-list li+li {
+    margin-top: 15px;
+}
+
+.faq .faq-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+    border: #E9DB34 solid 1px;
+}
+
+.faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #E9DB34;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+    display: none;
+}
+
+.faq .faq-list a.collapsed {
+    color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+    color: #9C4623;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+    display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+    display: none;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+faq h2 {
+    text-align: center;
 }
