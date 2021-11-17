@@ -119,8 +119,9 @@ h2 {
 --------------------------------------------------------------*/
 
 .btn-info {
-    background-color: #0a235a !important;
+    background-color: black !important;
     color: white !important;
+    border: #9C4623 solid 2px !important;
 }
 
 .btn-info:hover {
@@ -267,6 +268,7 @@ h2 {
     padding: 0 30px;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .faq .faq-list .icon-help {
