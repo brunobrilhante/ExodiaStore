@@ -115,6 +115,30 @@ h2 {
     background-color: #e9da3462
 
 }
+ #compra-card {
+    width: 100%;
+    height: 50vh;
+    background: url("../assets/img/yugi-background.gif") top center;
+    background-size: cover;
+    position: relative;
+ }
+
+ #compra-card h3, h4{ 
+   color: #bc568a;
+   width: 204px;
+   padding-top: 10px;
+   border-radius: 20px;
+ }
+
+ #compra-card .valores{
+    background-color: rgba(0, 0, 0, 0.609);
+    height: 337px;
+    border-radius: 20px;
+    width: 244px;
+    margin-left: 80px;
+    margin-top: 80px;
+
+ }
 
 
 /*--------------------------------------------------------------
