@@ -9,3 +9,4 @@ function AddCarrinho(produto, qtd, valor, posicao) {
     localStorage.setItem("valor" + posicao, valor);
     alert("Produto adicionado ao carrinho!");
 }
+
