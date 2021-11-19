@@ -13,6 +13,10 @@
 
    <!-- Libraries -->
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="css/progressbar25.css">
+   <link rel="stylesheet" href="css/progressbar50.css">
+   <link rel="stylesheet" href="css/progressbar75.css">
+   <link rel="stylesheet" href="css/progressbar100.css">
 
    <!--Main CSS File-->
    <link rel="stylesheet" href="/css/styles.css" />
@@ -53,13 +57,13 @@
 		</header>
 		<!--End Header-->
 
-    <section style="margin-top: 150px;">
+    <section id="compra-card">
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <img style="height: 550px; width: 400px;" class="img-thumbnail" src="/assets/img/Kuriboh-Editado.png" alt="Imagem de capa do card" />
+                    <img data-aos="fade-up" data-aos-delay="300"style="height: 550px; width: 400px;" class="img-thumbnail" src="/assets/img/Kuriboh-Editado.png" alt="Imagem de capa do card" />
                 </div>
-                <div class="col-6">
+                <div class="valores col-6 data-aos="fade-left" data-aos-delay="300"">
                     <h3>Kuriboh</h3>
                     <hr>
                     <h3 style="margin-top: 30px;">R$ 80,00</h3>
@@ -81,30 +85,38 @@
         </div>
     </section>
 
-    <section class="espaco">
+    <section id="card-info">
         <div class="container">
-            <hr>
-            <h2>Características gerais</h2>
-            <p>Tipo: Demônio <i class="fas fa-book-dead"></i></p>
-            <p>Nível: 1 <i class="fas fa-star"></i></p>
-            <p>ATK: 300 <i class="fas fa-fist-raised"></i></p>
-            <p>DEF: 200 <i class="fas fa-shield-alt"></i></p>
-            <p>Efeito: Durante a fase de batalha do seu oponente, você pode descartar esta carta para reduzir o dano de batalha inflingido aos seus pontos de vida por 1 dos monstros do seu oponente a zero. <i class="fas fa-skull"></i></p>
+            <h2 data-aos="fade" data-aos-delay="600">Características gerais</h2>
+            <div class="type-card" data-aos="fade" data-aos-delay="600"><p data-aos="fade" data-aos-delay="600">Tipo: Demônio <br><i class="fas fa-book-dead"></i></p></div>
+            <div class="progress25">
+                <div class="progress-value25"><p data-aos="fade" data-aos-delay="1000">Nível: 1 <i class="fas fa-star"></i></p></div>
+            </div>
+            <div class="progress25">
+                <div class="progress-value25" style="background:rgba(255, 0, 0, 0.644);"><p data-aos="fade" data-aos-delay="1000">ATK: 300 <i class="fas fa-fist-raised"></i></p></div>
+            </div>
+            <div class="progress25">
+                <div class="progress-value25" style="background: rgba(0, 0, 255, 0.541);"><p data-aos="fade" data-aos-delay="1000">DEF: 200 <i class="fas fa-shield-alt"></i></p></div>
+            </div>
+            <div class="effect-card" data-aos="fade" data-aos-delay="600"><p data-aos="fade" data-aos-delay="600">Efeito: Durante a fase de batalha do seu oponente, você pode descartar esta carta para reduzir o dano de batalha inflingido aos seus pontos de vida por 1 dos monstros do seu oponente a zero. <i class="fas fa-skull"></i></p>
+            </div>
 
         </div>
     </section>
 
-    <section id="contato" class="espaco">
+      <!-- ======= Contact Section ======= -->
+      <section id="contato" >
         <div class="container">
-            <hr>
-            <h2><strong>Entre em contato agora mesmo!</strong></h2>
-            <p>Nos envie uma mensagem, seja dúvida ou encomenda de produto.</p>
+            <h2 data-aos="fade-left" data-aos-delay="100"><strong>Entre em contato agora mesmo!</strong></h2>
+            <p data-aos="fade-right" data-aos-delay="100">Nos envie uma mensagem, seja dúvida ou encomenda de produto.</p>
             <a class="btn btn-info" href="mailto:storeexodia@gmail.com?subject=Titulo&body=Mensagem" target="_blank" title="Envie sua mensagem!">Mandar e-mail</a>
         </div>
     </section>
 
+    <!--End Contact-->
+
     <!-- ======= Footer Section ======= -->
-    <footer class="footer-area espaco ">
+    <footer class="footer-area">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 ">

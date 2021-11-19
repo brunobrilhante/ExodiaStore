@@ -7,11 +7,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Cairo', sans-serif;
-    
+
 }
 
 h2 {
-    color: #bc568a!important;
+    color: #bc568a !important;
 }
 
 #logo {
@@ -94,8 +94,9 @@ h2 {
     margin-left: 100px;
 }
 
+
 .card {
-    border: #E9DB34 solid 1px !important;
+    border: #e9db34 solid 1px !important;
     transition: ease-in-out 0.5s;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
@@ -106,41 +107,84 @@ h2 {
 }
 
 .tituloCard h5:hover {
-    color: #132958 !important;
+    color: #464b73 !important;
     transition: ease-in-out 0.5s;
 }
 
 #cartasEfeito {
     padding-bottom: 90px !important;
     background-color: #e9da3462
-
 }
- #compra-card {
+
+#compra-card {
     width: 100%;
     height: 50vh;
     background: url("../assets/img/yugi-background.gif") top center;
     background-size: cover;
     position: relative;
- }
+}
 
- #compra-card h3, h4{ 
-   color: #bc568a;
-   width: 204px;
-   padding-top: 10px;
-   border-radius: 20px;
- }
+#compra-card h3, h4 {
+    color: #bc568a;
+    width: 204px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
 
- #compra-card .valores{
-    background-color: rgba(0, 0, 0, 0.609);
+#compra-card .valores {
+    background-color: rgba(0 0 0 / 90%);
     height: 337px;
     border-radius: 20px;
-    width: 244px;
-    margin-left: 80px;
+    width: 541px;
+    margin-left: -23px;
     margin-top: 80px;
+    box-shadow: 0 4px 8px 0 rgb(19 41 88 / 90%), 0 6px 20px 0 rgb(233 219 52 / 90%);
 
- }
+}
+#contato{
+    background: url("../assets/img/yugi-home-5.jpg");
+    padding-top: 77px;
+
+}
+
+#contato p{
+    color:#e9db34 ;
+}
+
+#card-info{
+    background-color: #332574;
+    padding-top: 120px;
 
 
+}
+
+#card-info p{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+}
+
+#card-info .type-card{
+    border-radius: 12px;
+    background-color: green;
+    width: 109px;
+    margin-bottom: 5px;
+}
+
+#card-info .effect-card{
+    border-radius: 30px;
+    background-color: purple;
+    width: 500px;
+    margin-top: 5px;
+}
+
+#card-info .type-card  .fa-dragon,
+    .fa-paw,
+    .fa-book-dead,
+    .fa-hat-wizard{
+    font-size: 34px;
+}
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
@@ -149,6 +193,9 @@ h2 {
     background-color: black !important;
     color: white !important;
     border: #9C4623 solid 2px !important;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(128 0 128 / 90%);
+
 }
 
 .btn-info:hover {
@@ -158,9 +205,13 @@ h2 {
 }
 
 
-.btn{
+.btn {
     border-radius: 19px !important;
 }
+
+
+
+
 /*--------------------------------------------------------------
 # Home 
 --------------------------------------------------------------*/
@@ -170,18 +221,20 @@ h2 {
     background: url("../assets/img/yugi-home.png") top center;
     background-size: cover;
     position: relative;
-  }
+}
+
 #home .play-btn {
     width: 94px;
     height: 94px;
     margin: 0 auto;
-    background: radial-gradient(#e9db34 50%, rgba(233,219,52, 0.8) 52%);
+    background: radial-gradient(#e9db34 50%, rgba(233, 219, 52, 0.8) 52%);
     border-radius: 50%;
     display: block;
     overflow: hidden;
     position: relative;
-  }
-  #home .play-btn::after {
+}
+
+#home .play-btn::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -194,8 +247,9 @@ h2 {
     border-left: 15px solid #fff;
     z-index: 100;
     transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  #home .play-btn::before {
+}
+
+#home .play-btn::before {
     content: "";
     position: absolute;
     width: 120px;
@@ -216,12 +270,14 @@ h2 {
     top: -15%;
     left: -15%;
     background: rgba(198, 16, 0, 0);
-  }
-  #home .play-btn:hover::after {
+}
+
+#home .play-btn:hover::after {
     border-left: 15px solid #bc568a;
     transform: scale(20);
-  }
-  #home .play-btn:hover::before {
+}
+
+#home .play-btn:hover::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -237,23 +293,26 @@ h2 {
     -webkit-animation: none;
     animation: none;
     border-radius: 0;
-  }
+}
 
-  #home .player{
-      margin-top: 300px;
-      margin-left: 300px;
-      
-  }
+#home .player {
+    margin-top: 300px;
+    margin-left: 300px;
 
-  #home h2{
+}
+
+#home h2 {
     color: #bc568a !important;
     margin-bottom: 30px;
-  }
-  #home h4{
+}
+
+#home h4 {
     color: #E9DB34 !important;
     margin-bottom: 20px;
+    width: 583px;
 
-  }
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -359,8 +418,6 @@ h2 {
 
 .faq {
     background-color: #e9da3462
-
-
 }
 
 .faq .faq-list {
