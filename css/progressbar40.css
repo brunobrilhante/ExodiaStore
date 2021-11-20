@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Progress Bar
+--------------------------------------------------------------*/
+.progress40 {
+    background: rgba(255,255,255,0.1)!important;
+    justify-content: flex-start !important;
+    border-radius: 100px !important;
+    align-items: center !important;
+    position: relative !important;
+    padding: 0 2px !important;
+    display: flex !important;
+    height: 40px !important;
+    width: 500px !important;
+    font-size: 16px !important;
+
+  }
+  
+  .progress-value40 {
+    animation: load40 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #b3a50f;
+    height: 30px;
+    width: 0;
+  }
+
+
+
+  @keyframes load40 {
+    0% {width: 0;}
+    100% {width: 40%}
+  }

@@ -64,7 +64,7 @@ h2 {
 .footer-area {
     background-color: black;
     background: black;
-    height: 200px;
+    height: 200px;    
 }
 
 .footer-area a {
@@ -132,7 +132,7 @@ h2 {
 }
 
 #compra-card .valores {
-    background-color: rgba(0 0 0 / 90%);
+    background-color: rgba(0 0 0 / 97%);
     height: 337px;
     border-radius: 20px;
     width: 541px;
@@ -144,7 +144,17 @@ h2 {
 #contato{
     background: url("../assets/img/yugi-home-5.jpg");
     padding-top: 77px;
+    padding-bottom: 25px;
+}
 
+#contato .valores {
+    background-color: rgba(0 0 0 / 97%);
+    height: 200px;
+    border-radius: 20px;
+    width: 541px;
+    margin-top: 0px;
+    box-shadow: 0 4px 8px 0 rgb(19 41 88 / 90%), 0 6px 20px 0 rgb(233 219 52 / 90%);
+    padding: 20px;
 }
 
 #contato p{
@@ -162,7 +172,7 @@ h2 {
     font-size: 17px;
     margin-left: 10px;
     margin-bottom: 0;
-
+    color: white;
 }
 
 #card-info .type-card{
@@ -173,10 +183,10 @@ h2 {
 }
 
 #card-info .effect-card{
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: purple;
     width: 500px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 #card-info .type-card  .fa-dragon,
