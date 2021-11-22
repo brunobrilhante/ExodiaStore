@@ -186,7 +186,7 @@ h2 {
 #carrinhoCompras{
     width: 100%;
     height: 50vh;
-    background: url("../assets/img/enigma-do-milenio.jpg") top center;
+    background: url("../assets/img/enigma-do-milenio-teste.png") top center;
     background-size: cover;
     position: relative;
 }
