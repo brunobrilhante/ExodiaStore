@@ -8,7 +8,7 @@
 
 
 	<!--Favicon-->
-    <link rel="shortcut icon" href="assets/img/Favicon Exódia Store.png" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/img/Favicon_Exodia_Store.svg" type="image/x-icon">
 
     <!-- Libraries -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -54,13 +54,13 @@
 		<!-- ======= Shopping Cart Section ======= -->
 		<section id="carrinhoCompras" >
 			<div class="container">
-				<div class="row espaco">
+				<div class="row">
 					<div class="col-6" data-aos="fade-right">
-						<img style="height: 300px; width: 300px;" src="/assets/img/carrinho.png" alt="Carrinho">
+						<i class="fas fa-cart-arrow-down"></i>
 					</div>
-					<div class="col-6" data-aos="fade-left">
+					<div class="itens col-6" data-aos="fade-left">
 						<div id="itens"> </div>
-						<div>Total: <span id="total"></span> </div>	
+						<div class="valores-carrinho">Total: <span id="total"></span> </div>	
 
 						<script>
 						var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
@@ -87,8 +87,8 @@
 						document.getElementById("total").innerHTML = total.toFixed(2); 
 						</script>
 
-						<button data-bs-toggle="modal" data-bs-target="#modal1" style="margin-top: 30px; color: white;" class="btn btn-info" type="button" > Pagamento </button>
-						<button style="margin-top: 30px; color: white;" class="btn btn-info" type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+						<button data-bs-toggle="modal" data-bs-target="#modal1" style="margin-top: 30px; color: white;" class="btn btn-info" type="button" id="btn-pagamento"> Pagamento </button>
+						<button style="margin-top: 30px; color: white;" class="btn btn-info" type="button" onclick=" localStorage.clear(); location.reload();" id="btn-limpar"> Limpar carrinho </button>
 						
 						<!-- Modal Personal -->
 						<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
@@ -255,18 +255,19 @@
 
 
 		 <!-- ======= Contact Section ======= -->
-		<section id="contato" class="espaco" data-aos="fade-up">
+		 <section id="contato">
 			<div class="container">
-				<hr>
-				<h2><strong>Entre em contato agora mesmo!</strong></h2>
-				<p>Nos envie uma mensagem, seja dúvida ou encomenda de produto.</p>
-				<a style="color: white;" class="btn btn-info" href="mailto:storeexodia@gmail.com?subject=Titulo&body=Mensagem" target="_blank" title="Envie sua mensagem!">Mandar e-mail</a>
+				<div class="valores">
+					<h2 data-aos="fade-left" data-aos-delay="100"><strong>Entre em contato agora mesmo!</strong></h2>
+					<p data-aos="fade-right" data-aos-delay="100">Nos envie uma mensagem, seja dúvida ou encomenda de produto.</p>
+					<a class="btn btn-info" href="mailto:storeexodia@gmail.com?subject=Titulo&body=Mensagem" target="_blank" title="Envie sua mensagem!">Mandar e-mail</a>
+				</div>
 			</div>
 		</section>
 		<!--End Contact-->
 
 		 <!-- ======= Footer Section ======= -->
-		 <footer class="footer-area espaco ">
+		 <footer class="footer-area">
 			<div class="container ">
 				<div class="row ">
 					<div class="col-lg-12 ">
