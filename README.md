@@ -14,3 +14,8 @@ f. Animação.✅<br>
 
 1. AOS: http://michalsnik.github.io/aos/  || https://github.com/michalsnik/aos 📖
 2. GLighbox: https://biati-digital.github.io/glightbox/ || https://github.com/biati-digital/glightbox 📖
+
+
+# Site hospedado 🌍:
+
+1. https://exodiastore.netlify.app/
