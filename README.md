@@ -9,7 +9,7 @@ Desenvolver um protótipo usando 📄:
 5. Vídeo;✅<br> 
 6. Animação.✅<br> 
 
-# Ferramentas Utilizadas 🛠
+# Ferramentas Utilizadas 🛠 
 
 1. HTML
 2. CSS
